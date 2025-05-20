@@ -1,0 +1,109 @@
+/* Rating Popup Styles */
+.rating-popup {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+
+  rating-comment {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    resize: none;
+    font-size: 14px;
+    min-height: 60px;
+  }
+
+
+  .rating-comment:focus {
+    outline: none;
+    border-color: #4CAF50;
+  }
+
+
+
+  
+  .popup-content {
+    background: white;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    width: 220px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .popup-content h3 {
+    margin: 0 0 8px 0;
+    font-size: 14px;
+    color: #333;
+    font-weight: 500;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 4px;
+    right: 6px;
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    color: #999;
+    line-height: 1;
+    padding: 2px;
+  }
+  
+  .star-rating-horizontal {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    margin: 8px 0;
+  }
+  
+  .star {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #ddd;
+    padding: 0;
+    transition: color 0.2s;
+    line-height: 1;
+  }
+  
+  .star.on {
+    color: #ffc107;
+  }
+  
+  .submit-btn {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    cursor: pointer;
+    margin-top: 5px;
+    transition: background 0.2s;
+  }
+  
+  .submit-btn:hover {
+    background: #45a049;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+  }
+
