@@ -27,7 +27,7 @@ export const Blog = () => {
             <h2>UPCOMING EVENTS</h2>
           </div>
           <div className='grid3'>
-            {events.map((event) => (
+           {Array.isArray(events) && events.map((event) => (
               <div className='box' key={event._id}>
                 <img 
                   src={`/images/events/${event.cover}`} 
